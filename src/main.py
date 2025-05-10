@@ -474,7 +474,7 @@ class MainApp(qtw.QApplication):
         documentation_action.triggered.connect(self.show_documentation)
 
         update_action = help_menu.addAction(self.loc.main.check_for_updates)
-        update_action.setIcon(qta.icon("fa.refresh", color="#ffffff"))
+        update_action.setIcon(qta.icon("fa5s.sync", color="#ffffff"))
 
         def check_for_updates():
             upd = updater.Updater(self)

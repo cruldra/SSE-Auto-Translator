@@ -85,7 +85,7 @@ class IntroductionPage(qtw.QWidget):
         vlayout.addLayout(hlayout)
 
         self.exit_button = qtw.QPushButton()
-        self.exit_button.setIcon(qta.icon("fa.close", color="#ffffff"))
+        self.exit_button.setIcon(qta.icon("fa5s.times", color="#ffffff"))
         self.exit_button.setText(self.loc.main.exit)
         self.exit_button.clicked.connect(
             lambda: (self.startup_dialog.close(), self.startup_dialog.app.exit())

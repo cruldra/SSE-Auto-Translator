@@ -68,7 +68,7 @@ class TranslationsWidget(qtw.QWidget):
         show_vanilla_strings_action.triggered.connect(show_vanilla_strings)
 
         search_database_action = self.tool_bar.addAction(
-            qta.icon("fa.search", color="#ffffff", scale_factor=0.85),
+            qta.icon("fa5s.search", color="#ffffff", scale_factor=0.85),
             self.mloc.search_database,
         )
         search_database_action.triggered.connect(self.search_database)
@@ -103,7 +103,7 @@ class TranslationsWidget(qtw.QWidget):
                 self.app.log.info("Unbound Nexus Mods Links.")
 
         self.nxmhandler_button = self.tool_bar.addAction(
-            qta.icon("fa.chain", color="#ffffff"),
+            qta.icon("fa5s.link", color="#ffffff"),
             self.mloc.handle_nxm + " [Experimental]",
         )
         self.nxmhandler_button.setCheckable(True)

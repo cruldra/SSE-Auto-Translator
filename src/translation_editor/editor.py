@@ -135,7 +135,7 @@ class TranslationEditor(qtw.QSplitter):
         # Create new tab if translation is not already open
         if not any(tab.translation == translation for tab in self.tabs.values()):
             translation_item = qtw.QTreeWidgetItem([translation.name, ""])
-            
+
             translation_tab = EditorTab(self.app, translation)
             translation_tab.changes_signal.connect(
                 lambda: translation_item.setText(0, f"{translation.name}*")
@@ -146,7 +146,7 @@ class TranslationEditor(qtw.QSplitter):
             close_button = qtw.QPushButton()
             close_button.setObjectName("list_close_button")
             close_button.setFocusPolicy(qtc.Qt.FocusPolicy.NoFocus)
-            close_button.setIcon(qta.icon("fa.close", color="#ffffff"))
+            close_button.setIcon(qta.icon("fa5s.times", color="#ffffff"))
             close_button.setFixedSize(26, 26)
 
             for plugin_name in translation.strings:

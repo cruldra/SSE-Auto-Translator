@@ -880,11 +880,11 @@ class MainPageWidget(qtw.QWidget):
             menu.addSeparator()
 
             uncheck_action = menu.addAction(self.mloc.uncheck_selected)
-            uncheck_action.setIcon(qta.icon("fa.close", color="#ffffff"))
+            uncheck_action.setIcon(qta.icon("fa5s.times", color="#ffffff"))
             uncheck_action.triggered.connect(uncheck_selected)
 
             check_action = menu.addAction(self.mloc.check_selected)
-            check_action.setIcon(qta.icon("fa.check", color="#ffffff"))
+            check_action.setIcon(qta.icon("fa5s.check", color="#ffffff"))
             check_action.triggered.connect(check_selected)
 
             menu.addSeparator()
